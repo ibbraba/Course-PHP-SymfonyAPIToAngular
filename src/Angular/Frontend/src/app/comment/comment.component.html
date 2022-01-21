@@ -1,0 +1,11 @@
+<div *ngIf="loaderService.isLoading | async">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>
+
+
+<div *ngFor="let commment of data['hydra:member']">
+  <h4>{{commment.Name}}</h4>
+  <p>{{commment.content}}</p>
+
+
+</div>

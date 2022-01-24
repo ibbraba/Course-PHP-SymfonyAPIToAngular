@@ -3,9 +3,15 @@
 </div>
 
 
-<div *ngFor="let commment of data['hydra:member']">
-  <h4>{{commment.Name}}</h4>
-  <p>{{commment.content}}</p>
 
+<div *ngFor="let commment of data['hydra:member']">
+
+  <mat-card class="card">
+    <mat-card-title><h4>{{commment.Name}}</h4></mat-card-title>
+    <mat-card-content>
+      <p>{{commment.content}}</p>
+    </mat-card-content>
+
+  </mat-card>
 
 </div>

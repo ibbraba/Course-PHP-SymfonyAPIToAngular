@@ -1,0 +1,7 @@
+<form [formGroup]="commentForm"  (ngSubmit)="collectData()" action="">
+  <input type="text" name="name" formControlName="name" placeholder="Name">
+  <input type="text" name="content" formControlName="content" placeholder="Content">
+  <button type="submit" class="btn btn-done">Envoyer</button>
+
+
+</form>
